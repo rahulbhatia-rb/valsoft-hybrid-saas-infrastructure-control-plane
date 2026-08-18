@@ -1,0 +1,36 @@
+{
+  "owner": null,
+  "cloud": {
+    "iac": false,
+    "cicd": false,
+    "rollback": false
+  },
+  "security": {
+    "least_privilege": false,
+    "managed_secrets": false,
+    "vulnerability_management": false,
+    "public_database": true,
+    "public_admin": true
+  },
+  "network": {
+    "firewall_owner": null,
+    "dns_owner": null,
+    "load_balancer_owner": null,
+    "connectivity_documented": false
+  },
+  "dr": {
+    "backups": false,
+    "restore_tested": false,
+    "rpo_minutes": 1440,
+    "rto_minutes": 2880
+  },
+  "operations": {
+    "monitoring": false,
+    "alert_owner": null,
+    "runbook": null,
+    "oncall_owner": null,
+    "patching_owner": null,
+    "cost_owner": null,
+    "documentation": false
+  }
+}
