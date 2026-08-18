@@ -1,0 +1,36 @@
+{
+  "owner": "platform",
+  "cloud": {
+    "iac": true,
+    "cicd": true,
+    "rollback": true
+  },
+  "security": {
+    "least_privilege": true,
+    "managed_secrets": true,
+    "vulnerability_management": true,
+    "public_database": false,
+    "public_admin": false
+  },
+  "network": {
+    "firewall_owner": "infra",
+    "dns_owner": "infra",
+    "load_balancer_owner": "infra",
+    "connectivity_documented": true
+  },
+  "dr": {
+    "backups": true,
+    "restore_tested": true,
+    "rpo_minutes": 60,
+    "rto_minutes": 240
+  },
+  "operations": {
+    "monitoring": true,
+    "alert_owner": "sre",
+    "runbook": "docs/dr-runbook.md",
+    "oncall_owner": "infra-oncall",
+    "patching_owner": "infra",
+    "cost_owner": "product",
+    "documentation": true
+  }
+}
